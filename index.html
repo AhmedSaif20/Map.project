@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Swiper stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -111,9 +113,9 @@
     <!-- End landing -->
     <!-- Start services -->
         <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-graduation-cap mb-4"></i>
@@ -126,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="swiper-slide">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-globe mb-4"></i>
@@ -139,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="swiper-slide">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-home mb-4"></i>
@@ -152,7 +154,59 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="swiper-slide">
+                        <div class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-book-open mb-4"></i>
+                                <h5 class="mb-3">departments that interest you</h5>
+                                <p class="mb-3">like the Youth Welfare Department</p>
+                                <div class="buttons-container">
+                                    <button type="button" class="btn btn-secondary"><a href="#">About</a></button>
+                                    <button type="button" class="btn btn-primary"><a href="#">Map</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-graduation-cap mb-4"></i>
+                                <h5 class="mb-3">Cairo University</h5>
+                                <p class="mb-3">to view information or a professional map of Cairo University</p>
+                                <div class="buttons-container">
+                                    <button type="button" class="btn btn-secondary"><a href="#">About</a></button>
+                                    <button type="button" class="btn btn-primary"><a href="#">Map</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe mb-4"></i>
+                                <h5 class="mb-3">University faculties</h5>
+                                <p class="mb-3">Cairo University contains approximately 20 faculties</p>
+                                <div class="buttons-container">
+                                    <button type="button" class="btn btn-secondary"><a href="#">About</a></button>
+                                    <button type="button" class="btn btn-primary"><a href="#">Map</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-home mb-4"></i>
+                                <h5 class="mb-3">Basic facilities</h5>
+                                <p class="mb-3">Basic facilities such as student affairs and libraries</p>
+                                <div class="buttons-container">
+                                    <button type="button" class="btn btn-secondary"><a href="#">About</a></button>
+                                    <button type="button" class="btn btn-primary"><a href="#">Map</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-book-open mb-4"></i>
@@ -166,6 +220,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     <!-- End services -->
@@ -182,65 +239,68 @@
                 <li>Nobil</li>
                 <li>Scientists</li>
             </ul>
-            <div class="images-container">
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-01.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Yahya Haqqi</h4>
-                        <p><a href="https://www.marefa.org/%D9%8A%D8%AD%D9%8A%D9%89_%D8%AD%D9%82%D9%8A" target="_blank">About</a></p>
+            <div class="container">
+                <div class="images-container row g-4">
+                    <div class="col-lg-3 col-sm-6 box">
+                        <div class="image"><img src="./img/shuffle-01.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Yahya Haqqi</h4>
+                            <p><a href="https://www.marefa.org/%D9%8A%D8%AD%D9%8A%D9%89_%D8%AD%D9%82%D9%8A" target="_blank">About</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-02.jfif" alt=""></div>
-                    <div class="caption">
-                        <h4>Magdi Yacoub</h4>
-                        <p><a href="https://en.wikipedia.org/wiki/Magdi_Yacoub" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6">
+                        <div class="image"><img src="./img/shuffle-02.jfif" alt=""></div>
+                        <div class="caption">
+                            <h4>Magdi Yacoub</h4>
+                            <p><a href="https://en.wikipedia.org/wiki/Magdi_Yacoub" target="_blank">About</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-03.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Yasser Arafat</h4>
-                        <p><a href="https://en.wikipedia.org/wiki/Yasser_Arafat" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-03.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Yasser Arafat</h4>
+                            <p><a href="https://en.wikipedia.org/wiki/Yasser_Arafat" target="_blank">About</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-04.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Naguib Mahfouz</h4>
-                        <p><a href="https://en.wikipedia.org/wiki/Naguib_Mahfouz" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-04.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Naguib Mahfouz</h4>
+                            <p><a href="https://en.wikipedia.org/wiki/Naguib_Mahfouz" target="_blank">About</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-05.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Yusuf Idris</h4>
-                        <p><a href="https://www.hindawi.org/contributors/95064085/" target="_blank">about</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-05.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Yusuf Idris</h4>
+                            <p><a href="https://www.hindawi.org/contributors/95064085/" target="_blank">about</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-06.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Zaki Naguib Mahmoud</h4>
-                        <p><a href="https://www.hindawi.org/contributors/64904748/" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-06.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Zaki Naguib Mahmoud</h4>
+                            <p><a href="https://www.hindawi.org/contributors/64904748/" target="_blank">About</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-07.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Taha Hussein</h4>
-                        <p><a href="https://en.wikipedia.org/wiki/Taha_Hussein" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-07.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Taha Hussein</h4>
+                            <p><a href="https://en.wikipedia.org/wiki/Taha_Hussein" target="_blank">About</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/shuffle-08.jpg" alt=""></div>
-                    <div class="caption">
-                        <h4>Hassan Fathy</h4>
-                        <p><a href="https://en.wikipedia.org/wiki/Hassan_Fathy" target="_blank">About</a></p>
+                    <div class="box col-lg-3 col-sm-6 ">
+                        <div class="image"><img src="./img/shuffle-08.jpg" alt=""></div>
+                        <div class="caption">
+                            <h4>Hassan Fathy</h4>
+                            <p><a href="https://en.wikipedia.org/wiki/Hassan_Fathy" target="_blank">About</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="" class="more">More</a>
+            <a href="https://www.marefa.org/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%AE%D8%B1%D9%8A%D8%AC%D9%8A_%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9" target="_blank" class="more">More</a>
         </div>
     </div>
     <!-- End feature -->
@@ -373,7 +433,7 @@
     <div class="footer">
         <div class="container">
             <div class="child-one">
-                <div class="links">
+                <div class="links mt-3">
                     <h4>Quick Link</h4>
                         <a href="#home" class="active btn-link">Home</a>
                         <a href="#services" class="btn-link">Services</a>
@@ -382,7 +442,7 @@
                         <a href="#contact" class="btn-link">Contact</a>
                         <a href="#team" class="btn-link">Our-Team</a>
                 </div>
-                <div class="contact" id="contact" style="margin-right: 50px;">
+                <div class="contact mt-3" id="contact" style="margin-right: 50px;">
                     <h4>Contact</h4>
                     <p><i class="fa fa-map-marker-alt me-3"></i> Address: 1 Gamaa Street, Giza</p>
                     <p><i class="fa fa-phone-alt me-3"></i> Postal Code: 12613</p>
@@ -393,7 +453,7 @@
                         <a href="https://www.youtube.com/@TheCairoUniversityOfficial"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="gallery">
+                <div class="gallery mt-3">
                     <h4>Gallery</h4>
                     <div class="img-container">
                         <img src="./img/img-01.png" alt="" style="height: 71px; width: 102px;">
@@ -411,6 +471,7 @@
     <!-- End footer -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
